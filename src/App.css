@@ -1,0 +1,158 @@
+.home-page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 30px;
+}
+.home-body {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  gap: 20px;
+}
+#tag {
+  font-size: 2vmax;
+}
+.cate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.upImg,
+.genImg,
+.chat {
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.upImg svg {
+  width: 25px;
+  height: 25px;
+  color: #00ff00;
+}
+
+.genImg svg {
+  width: 25px;
+  height: 25px;
+  color: #00ffff;
+}
+
+.chat svg {
+  width: 25px;
+  height: 25px;
+  color: #ff9900;
+}
+
+.upImg:hover,
+.genImg:hover,
+.chat:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.input-box {
+  width: 100%;
+  height: calc(100vh - 80% - 70px); /* setting height with remaining space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 20;
+}
+
+#add,
+#submit {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #616060;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #2e3330;
+}
+
+#add svg {
+  width: 30px;
+  height: 30px;
+}
+
+#submit svg {
+  width: 25px;
+  height: 25px;
+}
+
+form input {
+  width: calc(100% - 120px); /*Button width is 30px 30px */
+  max-width: 60%;
+  height: 60px;
+  color: #ffffff;
+  background-color: #2e3330;
+  border: 2px solid #606160;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.chat-page {
+  width: 100%;
+  height: 70%;
+  background-color: #00ffff;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user,
+.ai {
+  width: 90%;
+  padding: 20px 30px;
+  color: #ffffff;
+  background-color: #2e3330;
+  border: 2px solid #606160;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.popUp {
+  width: 200px;
+  height: 100px;
+  background-color: #00ff00;
+  position: absolute;
+  bottom: 100px;
+  left: 15%;
+  border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+  #tag {
+    font-size: 20px;
+  }
+}
